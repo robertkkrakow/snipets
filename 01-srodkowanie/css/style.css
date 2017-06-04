@@ -1,0 +1,79 @@
+html {
+    font-size: 10px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.clear {
+    clear: both;
+}
+
+.outer {
+    width: 20rem;
+    height: 20rem;
+    background-color: blueviolet;
+}
+
+.outer .inner {
+    width: 10rem;
+    height: 10rem;
+    background-color: darkgoldenrod;
+}
+/*meteda 1*/
+#box1.outer {
+    position: relative;
+}
+
+#box2.inner {
+    position: absolute;
+    top: 25%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+/*metoda 2*/
+#box3.outer {
+    display: inline-block;
+    float: left;
+    margin-top: 1rem;
+}
+
+#box4.inner {
+    margin: 0 auto;
+    top: 50%;
+    transform: translateY(50%);
+}
+/*metoda 3*/
+#box5.outer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: red;
+    margin-top: 1rem;
+}
+
+#box6.inner {
+    background: yellow;
+}
+
+
+/*najlepsza metoda*/
+#best1.outer {
+    position: relative;
+    
+}
+
+#best2.inner {
+    position: absolute;
+    margin: 0 auto;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+}
