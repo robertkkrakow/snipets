@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+}
+
+.curtain {
+    height: 100vh;
+    width: 100%;
+    background-color: aqua;
+    overflow: hidden;
+}
+
+.courtain-top,
+.courtain-bottom {
+    height: 50%;
+    width: 100%;
+}
+
+.courtain-top {
+    background-color: fuchsia;
+    animation: curtaintop 2s;
+}
+
+.courtain-bottom {
+    background-color: forestgreen;
+    animation: curtainbottom 2s;
+}
+
+@keyframes curtaintop {
+    from{
+        transform: translateY(-100%);
+    }
+    to{
+        transform: translateY(0%);
+    }
+}
+@keyframes curtainbottom {
+    from{
+        transform: translateY(100%);
+    }
+    to{
+        transform: translateY(0%);
+    }
+}
