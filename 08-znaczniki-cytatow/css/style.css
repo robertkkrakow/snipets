@@ -1,0 +1,20 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.main-container {
+    width: 100%;
+    height: 50vh;
+    background-color: bisque;
+    padding: 2em;
+    box-sizing: border-box;
+    margin-bottom: 2em;
+    display: block;
+    float: left;
+}
+
+q[lang="pl"]{
+    quotes: "\00ab" "\00bb";
+    background: red;
+}
